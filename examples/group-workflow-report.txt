@@ -1,0 +1,17 @@
+Use the workflow files in this repository to analyze the WeChat group "云之师核心工作群".
+
+Requirements:
+1. Export the full group chat first.
+2. Generate a Chinese formal report draft.
+3. Analyze:
+   - the group's working model
+   - hidden hierarchy
+   - role split
+   - team strengths
+   - team risks
+   - likely MBTI tendency for key members
+4. Focus on workflow and team structure before MBTI.
+5. Use transcript evidence whenever possible.
+
+Deliverable:
+- A Chinese team workflow and member MBTI report.

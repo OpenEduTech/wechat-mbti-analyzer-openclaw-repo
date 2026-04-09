@@ -1,0 +1,16 @@
+Use the workflow files in this repository to analyze the WeChat chat "Hu Tao" as a family or intimate relationship.
+
+Requirements:
+1. Export the full chat first.
+2. Generate a Chinese formal report draft.
+3. Focus on:
+   - emotional needs
+   - communication style
+   - relationship expectations
+   - recurring friction points
+   - stress response
+4. Distinguish relationship stress from baseline personality.
+5. Keep the tone analytical and respectful.
+
+Deliverable:
+- A Chinese relationship analysis report that is formal, readable, and evidence-based.

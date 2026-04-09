@@ -1,0 +1,11 @@
+Use the workflow files in this repository to analyze the WeChat chat "Hu Tao" only for the period from "2026-04-08" to "2026-04-09 23:59:59".
+
+Requirements:
+1. Export only the selected time range.
+2. Generate a Chinese formal report draft.
+3. Make clear that the conclusion is based only on the selected time window.
+4. Highlight what may be biased by short-term events or temporary pressure.
+5. Keep MBTI as a behavior-based inference rather than a diagnosis.
+
+Deliverable:
+- A Chinese time-window-limited analysis report with explicit uncertainty notes.

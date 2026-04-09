@@ -1,0 +1,14 @@
+Use the workflow files in this repository to analyze the WeChat chat "邹涛".
+
+Requirements:
+1. Export the full chat first.
+2. Read `all-messages.txt` and `metadata.json`.
+3. Generate or refine `formal-report-draft.md`.
+4. Write the final report in Chinese.
+5. Treat MBTI as a behavior-based inference, not a diagnosis.
+6. Give one most likely MBTI type and two backup types for each side.
+7. Explain the four dimensions: E/I, S/N, T/F, J/P.
+8. Use concrete transcript evidence whenever possible.
+
+Deliverable:
+- A polished Chinese MBTI and interaction report.

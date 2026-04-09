@@ -1,0 +1,17 @@
+Use the workflow files in this repository to analyze the WeChat chat "邹涛" as a founder or work-partner relationship.
+
+Requirements:
+1. Export the full chat first.
+2. Generate a Chinese formal report draft.
+3. Focus on:
+   - each person's likely MBTI tendency
+   - decision style
+   - pressure response
+   - complementarity
+   - conflict pattern
+   - role boundaries
+4. Keep MBTI as a behavior-based inference.
+5. The final report must be in Chinese and directly usable without extra cleanup.
+
+Deliverable:
+- A Chinese founder collaboration report with MBTI analysis and practical recommendations.
