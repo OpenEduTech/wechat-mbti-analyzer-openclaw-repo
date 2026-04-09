@@ -97,6 +97,7 @@ wechat-cli contacts --query "<name>"
 3. 生成正式报告模板
 4. 生成中文正式报告初稿
 5. 提供适合 OpenClaw 的提示词与示例
+6. 可选地通过飞书 CLI 把报告发布到飞书文档或发消息通知
 
 ### 跨平台入口
 
@@ -154,6 +155,26 @@ python3 ./scripts/wechat_mbti_common.py draft --chat-name "<chat name>"
 python3 ./scripts/wechat_mbti_common.py draft --chat-name "<chat name>" --start-time "2026-04-01" --end-time "2026-04-09 23:59:59"
 ```
 
+### 飞书 CLI 可选接入
+
+本仓库现在支持把生成好的 Markdown 报告通过飞书 CLI 发布到飞书文档，或者发送通知消息到飞书聊天。
+
+说明文档见：
+
+- `FEISHU_CLI.md`
+
+发布文档示例：
+
+```bash
+python3 ./scripts/publish_to_feishu.py doc --file ./exports/wechat-mbti/<run>/formal-report-draft.md --title "MBTI Report"
+```
+
+发送通知示例：
+
+```bash
+python3 ./scripts/publish_to_feishu.py notify --chat-id "<chat-id>" --text "The MBTI report has been generated."
+```
+
 ### 推荐的 OpenClaw 任务描述
 
 Use the workflow files in this repository to export the WeChat chat "<chat name>" and generate a Chinese MBTI and collaboration report draft. First export the transcript, then inspect speaker patterns, then write a formal Chinese report. Keep MBTI as a behavior-based inference, not a diagnosis.
@@ -184,6 +205,9 @@ Use the workflow files in this repository to export the WeChat chat "<chat name>
 
 - `references/`
   报告结构参考资料
+
+- `FEISHU_CLI.md`
+  飞书 CLI 接入说明
 
 ### 示例任务
 
@@ -301,6 +325,7 @@ This repo assumes `wechat-cli` is already working, then adds a higher-level work
 3. generate a report template
 4. generate a Chinese formal report draft
 5. provide reusable prompts and examples for OpenClaw
+6. optionally publish generated reports to Feishu Docs or send Feishu notifications through Feishu CLI
 
 ### Cross-Platform Entry Points
 
@@ -358,6 +383,26 @@ Optional time slicing:
 python3 ./scripts/wechat_mbti_common.py draft --chat-name "<chat name>" --start-time "2026-04-01" --end-time "2026-04-09 23:59:59"
 ```
 
+### Optional Feishu CLI Integration
+
+This repo now supports publishing generated markdown reports to Feishu Docs or sending a notification message through Feishu CLI.
+
+See:
+
+- `FEISHU_CLI.md`
+
+Publish a document:
+
+```bash
+python3 ./scripts/publish_to_feishu.py doc --file ./exports/wechat-mbti/<run>/formal-report-draft.md --title "MBTI Report"
+```
+
+Send a notification:
+
+```bash
+python3 ./scripts/publish_to_feishu.py notify --chat-id "<chat-id>" --text "The MBTI report has been generated."
+```
+
 ### Recommended OpenClaw Prompt
 
 Use the workflow files in this repository to export the WeChat chat "<chat name>" and generate a Chinese MBTI and collaboration report draft. First export the transcript, then inspect speaker patterns, then write a formal Chinese report. Keep MBTI as a behavior-based inference, not a diagnosis.
@@ -388,6 +433,9 @@ A successful run typically generates:
 
 - `references/`
   report structure references
+
+- `FEISHU_CLI.md`
+  Feishu CLI integration notes
 
 ### Examples
 

@@ -102,3 +102,55 @@ Requirements:
 3. Make clear that the conclusion is based only on the selected time window.
 4. Highlight what may be biased by short-term events or temporary pressure.
 ```
+
+## 7. Publish Report to Feishu Docs
+
+```text
+Use the workflow files in this folder to generate the Chinese report for "<chat name>", then publish the final markdown report to Feishu Docs.
+
+Requirements:
+1. Export the chat first.
+2. Generate or refine `formal-report-draft.md`.
+3. Use Feishu CLI integration to publish the markdown file as a Feishu document.
+4. If available, return the document link or CLI output.
+5. Keep MBTI as a behavior-based inference, not a diagnosis.
+```
+
+## 8. Publish and Notify in Feishu
+
+```text
+Use the workflow files in this folder to generate the Chinese report for "<chat name>", publish it to Feishu Docs, and then send a Feishu chat notification.
+
+Requirements:
+1. Export the chat first.
+2. Generate or refine `formal-report-draft.md`.
+3. Publish the markdown report to Feishu Docs.
+4. Send a short Feishu message to the target chat with the result.
+5. Return the publish result and notification result.
+```
+
+## 9. Feishu Chat MBTI Report
+
+```text
+Use the workflow files in this folder to export the Feishu chat "<chat name>" with chat id "<chat-id>", then generate a Chinese MBTI report.
+
+Requirements:
+1. Use Feishu CLI raw API access through the Feishu chat pipeline.
+2. Export the chat history first.
+3. Generate or refine `formal-report-draft.md`.
+4. Treat MBTI as a behavior-based inference, not a diagnosis.
+5. Use transcript evidence whenever possible.
+```
+
+## 10. Feishu Group Workflow Report
+
+```text
+Use the workflow files in this folder to export the Feishu group "<group name>" with chat id "<chat-id>", then generate a Chinese team workflow and MBTI report.
+
+Requirements:
+1. Export the Feishu group history first.
+2. Force group mode if needed.
+3. Analyze team structure, hidden hierarchy, role split, and likely MBTI tendencies of key members.
+4. Generate a Chinese formal report draft.
+5. Focus on workflow and role split before MBTI.
+```

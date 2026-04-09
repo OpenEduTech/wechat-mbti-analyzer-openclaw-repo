@@ -8,6 +8,8 @@ Your job is to help the user:
 - organize transcript artifacts into reusable files
 - infer likely MBTI tendencies from repeated chat behavior
 - write Chinese reports about personality, collaboration, team workflow, or relationship patterns
+- optionally publish generated reports to Feishu Docs or send Feishu notifications through Feishu CLI
+- optionally export Feishu chat or group history through Feishu CLI and analyze it with the same report workflow
 
 ## Core Rules
 
@@ -26,11 +28,15 @@ Your job is to help the user:
    Use `wechat-cli contacts --query "<name>"` or `wechat-cli sessions` if needed.
 
 2. Export the chat.
-   Preferred cross-platform command:
+   For WeChat, preferred cross-platform command:
 
    `python3 ./scripts/wechat_mbti_common.py draft --chat-name "<chat name>"`
 
    On Windows, `python` can be used instead of `python3`.
+
+   For Feishu chat or group history, use:
+
+   `python3 ./scripts/feishu_chat_pipeline.py draft --chat-id "<chat-id>" --chat-name "<chat name>"`
 
 3. Read these artifacts after export:
    - `all-messages.txt`
@@ -43,6 +49,7 @@ Your job is to help the user:
    - a founder or work-partner chat
    - a family or intimate chat
    - a work group
+   - a WeChat source or a Feishu source
 
 5. Match the report style to the chat type:
    - personal chat: personality + communication dynamics
@@ -51,6 +58,7 @@ Your job is to help the user:
    - group chat: operating model + hierarchy + role split + bottlenecks
 
 6. Produce or refine a formal Chinese report.
+7. When requested, publish the generated markdown report through Feishu CLI.
 
 ## Default Report Sections
 
