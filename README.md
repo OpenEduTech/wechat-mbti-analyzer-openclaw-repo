@@ -1,10 +1,10 @@
-# WeChat MBTI Analyzer for OpenClaw
+# Chat MBTI Analyzer for OpenClaw
 
 ## 中文版
 
 ### 项目简介
 
-`wechat-mbti-analyzer-openclaw-repo` 是一个面向 OpenClaw 的可复用工作流仓库，用于导出微信聊天记录，并将其整理为中文 MBTI 风格的人格分析、关系分析与团队协作报告。
+`chat-mbti-analyzer-openclaw-repo` 是一个面向 OpenClaw 的可复用工作流仓库，用于导出微信聊天记录，并将其整理为中文 MBTI 风格的人格分析、关系分析与团队协作报告。
 
 它支持：
 
